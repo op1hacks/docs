@@ -11,7 +11,7 @@ LFO types and their parameter values with:
 
 ## Bend
 
- | ---        | Blue (1) | Green (2) | White (3) | Red (4) | ^Blue (5) | ^Green (6) | ^White  (7) | ^Red (8) |
+ | Type       | Blue (1) | Green (2) | White (3) | Red (4) | ^Blue (5) | ^Green (6) | ^White  (7) | ^Red (8) |
  | ---        | ---      | ---       | ---       | ---     | ---       | ---        | ---         | ---      |
  | Default    |     7200 |      7100 |     32767 |       0 |         0 |          0 |           0 |     2048 |
  | Min        |     1024 |      1024 |    -32767 |    6208 |         0 |          0 |           0 |     1024 |
@@ -124,7 +124,7 @@ TODO: check min & max values
 
 ## Random
 
- | ---        | Blue (1) | Green (2) | White (3) | Red (4) | ^Blue (5) | ^Green (6) | ^White  (7) | ^Red (8) |
+ | Type       | Blue (1) | Green (2) | White (3) | Red (4) | ^Blue (5) | ^Green (6) | ^White  (7) | ^Red (8) |
  | ---        | ---      | ---       | ---       | ---     | ---       | ---        | ---         | ---      |
  | Defaults   |     2000 |      4000 |      2000 |   24000 |         0 |          0 |           0 |        0 |
  | Min values |        0 |         0 |      1024 |       0 |         0 |          0 |           0 |        0 |
