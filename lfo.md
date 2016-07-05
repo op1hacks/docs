@@ -6,13 +6,16 @@ LFO types and their parameter values with:
  - Default value (based on latest official firmware 'op1_14203.op1')
  - Min value
  - Max value
+ - The ^ symbol in the headers indicates the shift values (pressing shift and turning knob)
 
 
 ## Bend
 
- * Defaults:    7200, 7100,  32767,    0, 0, 0, 0, 2048
- * Min values:  1024, 1024, -32767, 6208, 0, 0, 0, 1024
- * Max values: 15360, 7168,  32767, 6208, 0, 0, 0, 3072
+ | ---        | Blue (1) | Green (2) | White (3) | Red (4) | ^Blue (5) | ^Green (6) | ^White  (7) | ^Red (8) |
+ | ---        | ---      | ---       | ---       | ---     | ---       | ---        | ---         | ---      |
+ | Default    |     7200 |      7100 |     32767 |       0 |         0 |          0 |           0 |     2048 |
+ | Min        |     1024 |      1024 |    -32767 |    6208 |         0 |          0 |           0 |     1024 |
+ | Max        |    15360 |      7168 |     32767 |    6208 |         0 |          0 |           0 |     3072 |
 
 ### Knobs
 
@@ -44,9 +47,11 @@ LFO types and their parameter values with:
 
 ## Crank
 
- * Defaults:      0, 16384, 2000,  2000,     0, 0, 0, 0
- * Min values: -576,     0, 1024,  1024,  8512, 0, 0, 0
- * Max values: 1280, 32767, 7168, 15360, 12992, 0, 0, 0
+ | ---        | Blue (1) | Green (2) | White (3) | Red (4) | ^Blue (5) | ^Green (6) | ^White  (7) | ^Red (8) |
+ | ---        | ---      | ---       | ---       | ---     | ---       | ---        | ---         | ---      |
+ | Defaults   |        0 |     16384 |      2000 |    2000 |         0 |          0 |           0 |        0 |
+ | Min values |     -576 |         0 |      1024 |    1024 |      8512 |          0 |           0 |        0 |
+ | Max values |     1280 |     32767 |      7168 |   15360 |     12992 |          0 |           0 |        0 |
 
 ### Knobs
 
@@ -73,9 +78,11 @@ LFO types and their parameter values with:
 
 ## Element
 
- * Defaults:   2000,   4000, 2000,  2000, 0, 0, 0, 0
- * Min values: 1024, -32767, 1024,  1024, 0, 0, 0, 0
- * Max values: 7168,  32767, 7168, 15360, 0, 0, 0, 0
+ | ---        | Blue (1) | Green (2) | White (3) | Red (4) | ^Blue (5) | ^Green (6) | ^White  (7) | ^Red (8) |
+ | ---        | ---      | ---       | ---       | ---     | ---       | ---        | ---         | ---      |
+ | Defaults   |     2000 |      4000 |      2000 |    2000 |         0 |          0 |           0 |        0 |
+ | Min values |     1024 |    -32767 |      1024 |    1024 |         0 |          0 |           0 |        0 |
+ | Max values |     7168 |     32767 |      7168 |   15360 |         0 |          0 |           0 |        0 |
 
 ### Knobs
 
@@ -117,9 +124,11 @@ TODO: check min & max values
 
 ## Random
 
- * Defaults:    2000,  4000, 2000, 24000, 0, 0, 0, 0
- * Min values:     0,     0, 1024,     0, 0, 0, 0, 0
- * Max values: 32767, 32767, 5120, 32767, 0, 0, 0, 0
+ | ---        | Blue (1) | Green (2) | White (3) | Red (4) | ^Blue (5) | ^Green (6) | ^White  (7) | ^Red (8) |
+ | ---        | ---      | ---       | ---       | ---     | ---       | ---        | ---         | ---      |
+ | Defaults   |     2000 |      4000 |      2000 |   24000 |         0 |          0 |           0 |        0 |
+ | Min values |        0 |         0 |      1024 |       0 |         0 |          0 |           0 |        0 |
+ | Max values |    32767 |     32767 |      5120 |   32767 |         0 |          0 |           0 |        0 |
 
 ### Knobs
 
@@ -146,9 +155,9 @@ TODO: check min & max values
 
 ## Tremolo
 
- * Defaults:   16000,      0,      0, 16000, 0, 0, 0, 0
- * Min values:     0, -32767, -32767,     0, 0, 0, 0, 0
- * Max value:  32440,  32767,  32767, 32767, 0, 0, 0, 0
+ * Defaults:   ```16000,      0,      0, 16000, 0, 0, 0, 0
+ * Min values: ```    0, -32767, -32767,     0, 0, 0, 0, 0
+ * Max value:  ```32440,  32767,  32767, 32767, 0, 0, 0, 0
 
 ### Knobs
 
