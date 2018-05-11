@@ -39,10 +39,10 @@ The OP-1 battery is a 3.7V li-polymer battery rated at 1800 mAh.
  - Width: 70mm
  - Height: 50mm
  - Depth: 7mm
-(Source: iFixit)[https://www.ifixit.com/Guide/Teenage+Engineering+OP-1+Battery+Replacement/65563]
+[Source: iFixit](https://www.ifixit.com/Guide/Teenage+Engineering+OP-1+Battery+Replacement/65563)
 
 The model number is 055070 and the connector type is *probably* a JST ACH.
-(Source: operator-1.com)[https://www.operator-1.com/index.php?p=/discussion/comment/41372/#Comment_41372]
+[Source: operator-1.com](https://www.operator-1.com/index.php?p=/discussion/comment/41372/#Comment_41372)
 The connector on the PCB looks like BM02B-ACHSS-GAN-TF(LF)(SN) and the connector
 on the battery looks like ACHR-02V-S.
 
@@ -55,7 +55,7 @@ TODO: Verify connector type and exact part number.
 
 Additional info:
 
-(Source: @Punji at operator-1.com)[https://www.operator-1.com/index.php?p=/discussion/comment/34440/#Comment_34440]
+[Source: @Punji at operator-1.com](https://www.operator-1.com/index.php?p=/discussion/comment/34440/#Comment_34440)
 
     The three S9C are Analog Devices ADG884 audio switches.
     The 23017 is an I/O expander.
