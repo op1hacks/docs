@@ -40,8 +40,41 @@ The directory structure is shown below.
 # Databases (specifically op1_factory.db)
 TODO: Table descriptions, synth & drum table data descriptions, 16 preset limit, etc.
 
+*Notes:*
+
+- The `folder` column in `synth_presets` is actually an arbitrary string, not the synth engine name. This means we could have custom folders that contain any types of synths.
+
 # Graphics (SVG)
 TODO: How the svg ID's are used, how the file format should be preserved and recommended svg editors etc.
+
+## Font & Symbols
+
+The OP-1 font is defined in the `opfont.svg` file. It defines the basic alphabet only in upper case and also contains additional UI symbols.
+Each character or symbol in the SVG file is mapped to a character by the `id` attribute. For example, the symbol for letter `A` has an `id` of `a`.
+During rendering the spacing between characters is determined by the `kerntable.db` database file.
+
+- All alphabetic characters are upper case, but are refered to with a lower case `id`.
+- Various UI symbols are refered to with an upper case letter. E.g. the drum symbol has id `D`.
+- Special characters that can't validly be used as an id, are instead referenced in a special hex notation. E.g the id for < is `_x3C_`.
+- Custom symbols can be added as long as all symbols have unique ids.
+
+*Special symbols:*
+
+- D: Drum icon
+- Q: Sequencer icon
+- X: FX icon (blue)
+- A: Envelope icon (blue)
+- L: LFO icon (blue)
+- H: FX icon (green)
+- E: Envelope icon (green)
+- F: LFO icon (green)
+- S: Synth icon (blue)
+- T: Tape icon (red)
+- M: Mixer icon (gray)
+- Y: Musical keyboard icon (blue)
+- I: FX blend icon (blue)
+- J: Blend icon without `FX` text, only the overlapping circles (blue)
+- Z: EQ icon (blue)
 
 # Preset Files (AIF)
 TODO: How the preset data is embedded, how to extract it, etc.
