@@ -9,27 +9,65 @@ Inkscape. Lots of SVG features are entirely unsupported.
 
 ## Supported Elements (non exhaustive list)
 
- - line
+ - svg
 
- - polyline
- 
  - rect
 
- - ellipse
+ - g
+
+ - line
+
+ - path
+
+   - Only supports a specific formatting of the `d` attribute.
+
+   - It seems that line commands only supports a single coordinate pair. That means that `L 10,10 20,20` doesn't work and should instead be written as `L 10,10 L 20,20`. The same logic might apply to other commands too but I haven't verified that yet.
+
+ - polyline
 
  - circle
 
- - path
- > Only supports a specific formatting of the `d` attribute.
- 
- 
+ - polygon
+
+ - ellipse
+
+ - defs (?)
+
+ - clipPath (?)
+
+ - use (?)
+
+
+## Supported attributes
+
+    xmlns, xmlns:xlink,
+    version, id, x, y, width, height, viewBox,
+    enable-background, space, fill, stroke, d, stroke-width,
+    cx, cy, r, x1, y1, x2, y2, stroke-dasharray, display,
+    stroke-linecap, points, rx, ry, stroke-linejoin, transform,
+    stroke-miterlimit, href, overflow, clip-path, opacity,
+
+
+## Transformations
+
+Transforms seem to be mostly unsupported, except for the matrix transform
+that seems to be used in a few of the graphics. Transforms on groups of
+elements don't seem to work at all.
+
+
+## Decimal precision
+
+The OP-1 crashes if numeric values in SVG files have more than 4 decimals
+of precision.
+
+
 ## Colos
 
 The OP-1 uses the colors in colors.svg for dynamic parts of the graphics.
 Static parts of the graphics use the same colors, but they're separately
 specified in the individual SVG files.
 
- 
+
 ## Fonts
 
 The OP-1 uses the characters in opfont.svg for drawing dynamic texts in the
