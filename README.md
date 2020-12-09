@@ -60,6 +60,10 @@ The directory structure is shown below.
     ├── OP1_vdk.ldr [firmware code]
     └── te-boot.ldr [bootloader]
 
+## Encryption of OP1_vdk.ldr
+The code blocks of OP1_vdk.ldr are encrypted using the [XTEA algortihm](https://en.wikipedia.org/wiki/XTEA).
+In each block of 24 bytes the first 8 bytes are encrypted and the following 16 bytes are unencrypted.
+The key is read from the blackfin OTP memory page 0xd0.
 
 # Databases (specifically op1_factory.db)
 TODO: Table descriptions, synth & drum table data descriptions, 16 preset limit, etc.
